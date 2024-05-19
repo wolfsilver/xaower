@@ -12,8 +12,6 @@
 # > Credit
 # @Choler & @DivineEngine & @app2smile
 
-[General]
-udp_drop_list = 443
 
 [Rule]
 
@@ -32,4 +30,4 @@ hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
 
 [URL Rewrite]
 
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-200
